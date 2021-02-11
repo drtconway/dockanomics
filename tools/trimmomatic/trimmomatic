@@ -1,0 +1,2 @@
+#!/bin/bash
+exec java ${TRIMMOMATIC_JAVA_OPTS} -jar /usr/share/java/trimmomatic.jar $@

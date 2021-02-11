@@ -7,5 +7,7 @@ RUN apt update && \
     apt install -y \
         trimmomatic 
 
+ADD trimmomatic /usr/bin/
+
 RUN mkdir /data
 WORKDIR /data
