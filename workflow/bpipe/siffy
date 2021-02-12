@@ -1,0 +1,9 @@
+#!/bin/bash
+SINGULARITY=${SINGULARITY:-/var/lib/singularity}
+
+for uri in $@
+do
+    fnm=${SINGULARITY}/$(echo "$uri" | sed 's/docker:\/\///; s/[:/.]/_/g').sif
+    singularity -s pull ${fnm} ${uri}
+    echo ${fnm}
+done
