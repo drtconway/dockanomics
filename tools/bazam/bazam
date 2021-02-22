@@ -1,3 +1,2 @@
 #!/bin/bash
-
 exec java -jar /usr/share/bazam/bazam.jar $@
