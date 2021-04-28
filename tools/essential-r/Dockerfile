@@ -7,8 +7,9 @@ RUN apt update && \
         git pandoc r-base texlive-luatex texlive-latex-extra \
         build-essential \
         libcurl4-gnutls-dev \
-        libxml2-dev \
+        libfontconfig1-dev \
         libssl-dev \
+        libxml2-dev \
         zlib1g-dev
 RUN R -e 'update.packages(ask=FALSE)'
 RUN R -e 'install.packages("devtools")' && \
