@@ -18,6 +18,7 @@ RUN R -e 'install.packages("devtools")' && \
     R -e 'install.packages(c("rmarkdown", "knitr", "kableExtra"))' && \
     R -e 'BiocManager::install("ComplexHeatmap")' && \
     R -e 'BiocManager::install("DESeq2")' && \
+    R -e 'BiocManager::install("FRASER")' && \
     R -e 'BiocManager::install("PCAtools")'
 
 RUN mkdir /data
