@@ -16,7 +16,7 @@ RUN R -e 'install.packages("devtools")'
 RUN R -e 'install.packages("BiocManager")'
 RUN R -e 'install.packages(c("data.table", "ggplot2", "gridExtra", "hexbin", "viridis"))'
 RUN R -e 'install.packages(c("rmarkdown", "knitr", "kableExtra", "DT"))'
-RUN R -e 'BiocManager::install("ComplexHeatmap")
+RUN R -e 'BiocManager::install("ComplexHeatmap")'
 RUN R -e 'BiocManager::install("DESeq2")'
 RUN R -e 'BiocManager::install("FRASER")'
 RUN R -e 'BiocManager::install("PCAtools")'
